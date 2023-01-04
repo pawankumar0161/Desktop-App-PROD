@@ -122,7 +122,8 @@ Public Class IRSSubmission
             Dim pdf2 = "" 'File.ReadAllBytes(updPDF.FileName)
             Dim pdf264 As String = "" 'Convert.ToBase64String(pdf2)
 
-            Dim client = New RestClient("http://aimcorp-002-site5.gtempurl.com/api/values/login")
+            'Dim client = New RestClient("http://aimcorp-002-site5.gtempurl.com/api/values/login")
+            Dim client = New RestClient("https://localhost:44300/api/values/login")
             Dim request = New RestRequest(Method.POST)
             request.AddHeader("cache-control", "no-cache")
             request.AddHeader("content-type", "application/json")
